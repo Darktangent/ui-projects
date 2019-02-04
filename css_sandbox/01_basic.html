@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Implementing css</title>
+  <style>
+    /* reset */
+    *{
+      margin:0;
+      padding:0;
+      /* to make sure padding doesnt change the size of the box */
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+
+    }
+    .container{
+      max-width: 960px;
+      margin: 30px auto;
+    }
+  .box{
+    background: #f4f4f4;
+    border:1px solid #333;
+    padding:20px;
+    margin-bottom: 15px;
+  }
+  .clr{
+    clear: both;
+  }
+  .box p{
+    text-align:justify;
+  }
+  #box2{
+    float: left;
+    width: 50%;
+  }
+  #box3{
+    float:right;
+    width: 50%;
+  }
+  a{
+    color:#333;
+    text-decoration: none;
+
+  }
+  a:hover{
+    color:coral;
+  }
+  a:visited{
+    color:brown;
+  }
+a:active{
+  color: purple;
+}
+.btn{
+  background: #4c6ca0;
+  color:white;
+  border:none;
+  font-size:16px;
+border-radius: 5px;
+cursor: pointer;
+line-height: 2.4em;
+padding: 10px;
+margin: 10px;
+
+}
+.btn:hover{
+  color:#333;
+  background: #446190;
+}
+.side-menu{
+  list-style:none;
+  border: 1px #ddd solid;
+  border-radius:10px;
+  width:300px;
+  padding:20px;
+}
+.side-menu li{
+  font-size:18px;
+  line-height: 2.4em;
+  border-bottom: dotted 1px #ddd;
+}
+.side-menu li:last-child{
+  border: none
+}
+.side-menu li a{
+  color:#333;
+  text-decoration: none;
+}
+.side-menu li a:hover{
+  color: coral;
+}
+/* navigation */
+.navbar{
+  list-style: none;
+  margin:0;
+  padding:0;
+  background:#4c6ca0;
+  border-radius:5px;
+overflow: auto
+}
+.navbar li{
+  float:left;
+}
+.navbar li a{
+  color:white;
+  text-decoration: none;
+  display:block;
+  padding:15px 20px;
+}
+.navbar li a:hover{
+  background-color: #446190;
+}
+.demo{
+  display:inline;
+
+}
+li a{
+  padding-right: 20px;
+}
+img{
+  display: block;
+  margin: auto;
+}
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="demo">
+      <a href="#">Technology</a>
+      <a href="#">Business</a>
+      <a href="#">Fashion</a>
+    </li>
+  </ul>
+  <br>
+  <img src="./img/leaf-icon-png-6.png" alt="my image">
+  <img src="./img/leaf-icon-png-6.png" alt="my image">
+  <ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Videos</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <ul class="side-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  <br>
+  <a href="#" class="btn">Click Here</a>
+  <br>
+  <button class="btn">My Button</button>
+  <!-- Inline css -->
+  <div class="container">
+
+      <h1 >Heading One</h1>
+      <h2>Heading Two</h2>
+      <h3>Heading Three</h3>
+      <!-- Border -->
+      <div id="box1" class="box">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magni. Quis alias suscipit reprehenderit impedit animi dignissimos exercitationem culpa totam placeat neque esse voluptatum, amet illum officia veniam laudantium doloribus!</p>
+      </div>
+      <br>
+      <div id="box2" class="box">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magni. Quis alias suscipit reprehenderit impedit animi dignissimos exercitationem culpa totam placeat neque esse voluptatum, amet illum officia veniam laudantium doloribus!</p>
+      </div>
+      <div id="box3" class="box">
+        <h3>Box Three</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magni. Quis alias suscipit reprehenderit impedit animi dignissimos exercitationem culpa totam placeat neque esse voluptatum, amet illum officia veniam laudantium doloribus!</p>
+      </div>
+      <div class="clr"></div>
+      <div id="box4">
+        <h3>Box Four</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, magni. Quis alias suscipit reprehenderit impedit animi dignissimos exercitationem culpa totam placeat neque esse voluptatum, amet illum officia veniam laudantium doloribus!</p>
+      </div>
+      <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>Vel iusto velit iure deleniti labore temporibus, dolorem quas tempore repellendus</span> impedit ullam ex! Perferendis obcaecati magnam voluptate sequi tempore. Nisi, veniam!</p>
+      </div>
+      <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span> Alias amet voluptas nostrum architecto? Beatae quae, placeat culpa aliquid quo quibusdam error</span> nostrum quaerat voluptates mollitia optio iusto doloribus, ad in?</p>
+      </div>
+  </div>
+</body>
+</html>

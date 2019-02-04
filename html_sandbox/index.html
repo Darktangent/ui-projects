@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Search -->
+  <meta name="description" content="This is my website description">
+  <!-- keywords -->
+  <meta name="keywords" content="web development, web design">
+
+  <title>Live Server</title>
+</head>
+<body>
+  <!-- inline vs block -->
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus tenetur, omnis autem officiis vitae expedita at deserunt! Quam repudiandae adipisci rerum ut esse repellendus expedita praesentium quaerat? Tempore, veritatis? Libero.</p>
+  <!-- inline -->
+  <a href="#">Link1</a>
+  <a href="#">Link2</a>
+  <!--  -->
+  <div id="main-header">
+    <h1>My Site</h1>
+  </div>
+  <ul id="main-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div id="about">
+    <h3>About</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus odit omnis et sequi adipisci autem? Recusandae labore, quia deserunt debitis ad error, sit quidem quod distinctio autem, nisi numquam.</p>
+  </div>
+  <div id="contact">
+    <h3>Contact Me</h3>
+    <ul>
+      <li>Address:50 main st</li>
+      <li>Phone:888-888-8888</li>
+      <li>Email: me@me.com</li>
+    </ul>
+  </div>
+  <div id="footer">
+    <p>Copyright 2019</p>
+  </div>
+  <!-- External Link -->
+  <p>
+      <a href="http://www.google.com" target="_blank">Google</a>
+  </p>
+  <p>
+      <a href="http://www.google.com" target="_blank">Google</a>
+  </p>
+  <p>
+    <a href="./test.html">Test Page</a>
+  </p>
+  <!-- local image -->
+  <img src="./images/sample1.jpg" alt="Sample" width="200">
+
+  <!-- remote image linking-->
+  <img src="https://source.unsplash.com/200x200/?random/" alt="">
+
+  <!-- Comment-->
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <!--  -->
+  <!-- Paragraph -->
+  <p><strong>Lorem</strong> ipsum dolor <em>sit</em> amet consectetur adipisicing elit. In culpa perspiciatis delectus, autem facilis neque itaque iste. Aut omnis doloremque tempore, excepturi a nesciunt eos, alias reiciendis quos culpa mollitia nihil! Cupiditate voluptatum corporis provident, consectetur sed nisi laboriosam soluta distinctio doloremque repellat ut impedit?<br> Aliquid, doloremque numquam? Incidunt earum similique exercitationem a quibusdam autem <del>maxime repellendus sapiente maiores velit, nobis facilis aspernatur?</del>  Doloribus pariatur architecto minima natus voluptas culpa, voluptatum fugiat nemo ipsum assumenda debitis commodi velit sequi maxime omnis, libero deserunt modi? Tenetur placeat earum cumque iure vel commodi illo ea, omnis facere nesciunt facilis perferendis cum.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsam rem culpa minus, voluptate animi esse voluptatum dignissimos. Quaerat voforluptatum repudiandae, nobis 
+    <!-- horizonatal rule -->
+    <hr>
+    voluptas iste accusantium reprehenderit quisquam incidunt cumque aliquam?</p>
+    <!-- unordered lists -->
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+      <li>Fourth Item</li>
+      <li>Fifth Item</li>
+      <li>Sixth Item</li>
+    </ul>
+    <ol type="I">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+    <!-- Nested List -->
+    <ul>
+        <li>First Item</li>
+        <li>Second Item
+          <ul>
+            <li>Nest 1</li>
+            <li>Nest 2</li>
+          </ul>
+        </li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+        <li>Sixth Item</li>
+      </ul>
+      <!-- Tables -->
+      <table>
+        <!-- table has head, body and footer -->
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john.doe@example.com</td>
+          </tr>
+          <tr>
+              <td>Kerry</td>
+              <td>Doe</td>
+              <td>kerry.doe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jerry</td>
+                <td>Doe</td>
+                <td>jerry.doe@example.com</td>
+              </tr>
+        </tbody>
+      </table>
+      <!-- Forms and input -->
+      <form action="">
+        <div>
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name">
+        </div>
+        <div>
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email" placeholder="Your email">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="sex"></label>
+          <select name="sex"  id="sex"></select>
+          <option value="male" selected>Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </div>
+        <div>
+          <label for="age">Age</label><br>
+          <input type="number" name="age" id="age">
+        </div>
+        <div>
+          <label for="birthdate"></label><br>
+          <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <!-- checkbox -->
+        <div>
+          <label for="membership"></label><br>
+          <input type="radio" name="membership" value="simple" id="membership">
+          <input type="radio" name="membership" value="standard" id="membership" checked>
+          <input type="radio" name="membership" value="super" id="membership">
+        </div>
+        <div>
+            <label for="membership">I like</label><br>
+            <input type="checkbox" name="likes" value="bike" id="membership">Bike
+            <input type="checkbox" name="likes" value="car" id="membership" >Car
+            <input type="checkbox" name="likes" value="boar" id="membership">Boat
+        </div>
+        <input type="submit" value="submit">
+        <!-- button -->
+        <button type="submit">Submit</button>
+
+      </form>
+</body>
+</html>
